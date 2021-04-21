@@ -1,0 +1,47 @@
+.nav {
+    height: 3em;
+    width: 100%;
+    position: fixed;
+    padding: 1.5em 0 0 0;
+    /* font-weight: 600; */
+}
+
+/* html {
+    scroll-behavior: smooth;
+} */
+
+.nav > .nav-title {
+    display: inline-block;
+    font-size: 18px;
+    padding: 0px 2em;
+}
+
+.nav > .nav-title > a {
+    color: black;
+}
+
+.nav > .nav-title > a:hover {
+    color: red;
+}
+
+.nav > .nav-links {
+    display: inline;
+    float: right;
+    font-size: 18px;
+    padding: 0 1em 0 0;
+}
+  
+.nav > .nav-links > a {
+    display: inline-block;
+    padding: 0 1em;
+    text-decoration: none;
+    color: black;
+}
+  
+.nav > .nav-links > a:hover {
+    color: red;
+}
+
+/* @media (max-width: 40em) {
+
+} */
