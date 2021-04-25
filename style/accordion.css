@@ -1,0 +1,33 @@
+.accordion {
+    list-style:none;
+    margin:0;
+    padding:0;
+    width: 75vw;
+}
+    
+.accordion li {
+    padding: 2em 0;
+    border-bottom:1px solid #ccc;
+    position:relative;
+    cursor:pointer;
+}
+  
+.accordion h3 {
+    margin:0;
+}
+ 
+.accordion span {
+    float: right;
+    color:#ccc;
+    font-size: 1.5em;
+}
+  
+.accordion div {
+    margin:5px 0;
+    display:none;
+}
+
+.level {
+    display: inline-block;
+}
+   

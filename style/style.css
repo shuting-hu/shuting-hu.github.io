@@ -12,7 +12,7 @@ img {
     height: auto;
 }
 
-a{
+a {
     color: #DA5135;
     text-decoration: none;
 }
@@ -27,6 +27,12 @@ a:hover {
     padding-bottom: 0.5em;
 }
 
+.intro {
+    font-weight: 600;
+    font-size: 60px;
+    padding-bottom: 20px;
+}
+
 .subheading {
     font-weight: 500;
     font-size: 30px;
@@ -38,31 +44,9 @@ p {
     margin: 0;
 }
 
-.word {
-    position: absolute;
-    width: auto;
-    opacity: 0;
-}
-
-.letter {
-    display: inline-block;
-    position: relative;
-    transform: translateZ(25px);
-    transform-origin: 50% 50% 25px;
-}
-
-.letter.out {
-    transform: rotateX(90deg);
-    transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
-}
-
-.letter.behind {
-    transform: rotateX(-90deg);
-}
-
-.letter.in {
-    transform: rotateX(0deg);
-    transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+.fish {
+    text-align: right;
+    font-size: 1.2em;
 }
 
 .highlight {
@@ -84,6 +68,24 @@ p {
     background-size: 100% 88%;
 }
 
+.title-socials > a {
+    padding-right: 1em;
+}
+
 .faded {
     opacity: 0.5;
+}
+
+.footer {
+    text-align: center;
+    margin: 5em 0;
+}
+
+.footer > .socials > a {
+    padding: 0 0.5em;
+}
+
+.copr {
+    font-size: 14px;
+    margin: 1em;
 }

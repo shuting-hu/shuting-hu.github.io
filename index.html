@@ -12,7 +12,8 @@
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/nav.css">
     <link rel="stylesheet" href="style/grid.css">
-    <link rel="stylesheet" href="style/components.css">
+    <link rel="stylesheet" href="style/rotating.css">
+    <link rel="stylesheet" href="style/accordion.css">
 </head>
 
 <body>
@@ -23,14 +24,15 @@
         <div class="nav-links">
             <a href="#about">about</a>
             <a href="#projects">projects</a>
-            <a href="#creative">film</a>
+            <a href="#films">films</a>
             <a href="#" target="_blank">résumé</a>
         </div>
     </div>
 
+    <!-- LANDING -->
     <div class="wrapper" id="landing">
         <div id="title">
-            <div class="heading">
+            <div class="intro">
                 <p>
                     <span class="word">hello,</span>
                     <span class="word">你好,</span>
@@ -38,17 +40,30 @@
                     <span class="word">안녕하세요,</span>
                     <span class="word">hallo,</span>
                     <span class="word">こんにちは,</span>
+                    <span class="word">aloha,</span>
                 </p><br>
                 <p>i'm <span class="highlight">ShuTing.</span></p><br>
-                <p class="subheading">welcome to my tech adventure</p>
+                <div class="subheading">welcome to my tech adventure</div>
+            </div>
+            <div class="title-socials">
+                <a href="https://github.com/shuting-hu" target="_blank">
+                    <img src="assets/icons/github.svg" alt="github" />
+                </a>
+                <a href="https://www.linkedin.com/in/shu-ting-hu/" target="_blank">
+                    <img src="assets/icons/linkedin.svg" alt="linkedin" />
+                </a>
+                <a href="mailto:shutinghu2000@gmail.com">
+                    <img src="assets/icons/email.svg" alt="email" />
+                </a>
             </div>
         </div>
 
         <div id="graphic">
-            <img src="assets/placeholder2.jpeg" alt="A Window to ShuTing's Imagination">
+            <img src="assets/placeholder2.jpeg" alt="A Window to ShuTing's World">
         </div>
     </div>
 
+    <!-- ABOUT -->
     <div class="wrapper" id="about">
         <div id="photo">
             <img src="assets/placeholder0.png" alt="Oh hi, it's me!">
@@ -63,37 +78,116 @@
                 Thank you for visiting my little internet nook.
                 I'm an island born, city raised Chinese-Canadian currently based in Vancouver, BC.
                 I'm pursuing my <b>Computer Science</b> degree at the
-                <b><a href="https://www.ubc.ca/">University of British Columbia</a></b>,
+                <b><a href="https://www.ubc.ca/" target="_blank">University of British Columbia</a></b>,
                 progressing through my career journey as a <b>software developer</b>
-                and occasionally dabbling in <b>design</b>.
+                and doing the occasional dabble into <b>design</b>.
                 <br><br>
                 In my free time you can catch me on the badminton or volleyball courts,
-                hiking local mountains, making films, trying to become a polygot
-                and organizing <b>hackathons</b> at <b><a href="https://www.nwplus.io/">nwPlus</a></b>!
-                I'm extremely passionate about <b>Diversity & Inclusion</b>
-                and love building events to support women*-identifying and underrepresented groups
-                in discovering their tech journeys through <b><a href="https://cmd-f.nwplus.io/">cmd-f</a></b>.
-                <br><br><br>
-                <iframe src="https://open.spotify.com/embed/playlist/0BWBKTXfgrHdJXcVqALyq3" width="300" height="80"
-                    frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                hiking local mountains, trying to become a polygot, making travel films
+                and organizing <b>hackathons</b> at <b><a href="https://www.nwplus.io/" target="_blank">nwPlus</a></b>!
+                I'm extremely passionate about <b>Diversity & Inclusion</b> and love building events through
+                <b><a href="https://cmd-f.nwplus.io/" target="_blank">cmd-f</a></b>
+                to support women*-identifying and underrepresented groups in their tech world explorations.
+                <br><br>
+                <b><a href="mailto:shutinghu2000@gmail.com">Let's chat</a></b>! Or find my mini dragon bot in the corner
+                who is eager to help break (melt) the ice. Try asking for my music reccomendations, what I'm currently
+                reading or what language I want to learn next.
+                <br><br>
+                <div class="fish">𓆝𓆟𓆜𓆞𓆡</div>
             </p>
         </div>
     </div>
 
+    <!-- PROJECTS -->
     <div class="wrap" id="projects">
-        <div class="heading">
-            <span class="highlight">projects.</span>
+        <div>
+            <div class="heading">
+                <span class="highlight">projects.</span>
+            </div>
+            <ul class="accordion">
+                <li>
+                    <h3 class="level">COMING SOON</h3>
+                    <span class="level">+</span>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet</p>
+                    <div class="hidden">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat.
+                        Duis aute irure dolor in reprehenderit in voluptate
+                        velit esse cillum dolore eu fugiat nulla pariatur.
+                        Excepteur sint occaecat cupidatat non proident,
+                        sunt in culpa qui officia deserunt mollit anim id est laborumsed
+                        do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </div>
+                </li>
+                <li>
+                    <h3 class="level">Impostor</h3>
+                    <span class="level">+</span>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi commodo, ipsum sed pharetra
+                        gravida, orci magna rhoncus neque.</p>
+                    <div class="hidden">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat.
+                        Duis aute irure dolor in reprehenderit in voluptate
+                        velit esse cillum dolore eu fugiat nulla pariatur.
+                        Excepteur sint occaecat cupidatat non proident,
+                        sunt in culpa qui officia deserunt mollit anim id est laborumsed
+                        do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </div>
+                </li>
+                <li>
+                    <h3 class="level">Wanderlist</h3>
+                    <span class="level">+</span>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet</p>
+                    <div class="hidden">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat.
+                        Duis aute irure dolor in reprehenderit in voluptate
+                        velit esse cillum dolore eu fugiat nulla pariatur.
+                        Excepteur sint occaecat cupidatat non proident,
+                        sunt in culpa qui officia deserunt mollit anim id est laborumsed
+                        do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </div>
+                </li>
+                <li>
+                    <h3 class="level">Canary</h3>
+                    <span class="level">+</span>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi commodo, ipsum sed pharetra
+                        gravida, orci magna rhoncus neque.</p>
+                    <div class="hidden">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat.
+                        Duis aute irure dolor in reprehenderit in voluptate
+                        velit esse cillum dolore eu fugiat nulla pariatur.
+                        Excepteur sint occaecat cupidatat non proident,
+                        sunt in culpa qui officia deserunt mollit anim id est laborumsed
+                        do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </div>
+                </li>
+            </ul>
         </div>
     </div>
 
-    <div class="wrapper" id="creative">
+    <!-- FILMS -->
+    <div class="wrapper" id="films">
         <div id="playlist">
             insert portfolio playlist
         </div>
 
-        <div id="film">
+        <div id="films">
             <div class="heading">
-                <span class="highlight">film.</span>
+                <span class="highlight">films.</span>
             </div>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit,
@@ -110,12 +204,30 @@
     </div>
 
     <div class="footer">
-        <!-- created w ❤️ by ShuTing Hu -->
+        <div class="socials">
+            <a href="https://github.com/shuting-hu" target="_blank">
+                <img src="assets/icons/github.svg" alt="github" />
+            </a>
+            <a href="https://www.linkedin.com/in/shu-ting-hu/" target="_blank">
+                <img src="assets/icons/linkedin.svg" alt="linkedin" />
+            </a>
+            <a href="https://www.youtube.com/channel/UC-pdQ79A-Vnd0fwWuJnR76g" target="_blank">
+                <img src="assets/icons/yt.svg" alt="youtube" />
+            </a>
+            <a href="https://www.facebook.com/shutingwho" target="_blank">
+                <img src="assets/icons/fb.svg" alt="facebook" />
+            </a>
+            <a href="https://www.instagram.com/shuting.hu/" target="_blank">
+                <img src="assets/icons/ig.svg" alt="instagram" />
+            </a>
+        </div>
+        <div class="copr">created with ʕ•́ᴥ•̀ʔっ♥ by ShuTing Hu © 2021</div>
     </div>
 
     <script src="/js/rotating-text.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="/js/anchor-scroll.js"></script>
+    <script src="/js/accordion-view.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,49 @@
+.word {
+    position: absolute;
+    width: auto;
+    opacity: 0;
+}
+
+.letter {
+    display: inline-block;
+    position: relative;
+    transform: translateZ(25px);
+    transform-origin: 50% 50% 25px;
+}
+
+.letter.out {
+    transform: rotateX(90deg);
+    transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.letter.behind {
+    transform: rotateX(-90deg);
+}
+
+.letter.in {
+    transform: rotateX(0deg);
+    transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.link--herse {
+	font-family: freight-display-pro, serif;
+	font-size: 1.375rem;
+	font-weight: bold;
+}
+
+.link__graphic--arc {
+	top: 73%;
+	left: -23%;
+}
+
+.link__graphic--arc path {
+	stroke-dasharray: 1;
+	stroke-dashoffset: 1;
+	transition: stroke-dashoffset 0.4s cubic-bezier(0.7, 0, 0.3, 1);
+}
+
+.link:hover .link__graphic--arc path {
+	stroke-dashoffset: 0;
+	transition-timing-function: cubic-bezier(0.8, 1, 0.7, 1);
+	transition-duration: 0.3s;
+}
