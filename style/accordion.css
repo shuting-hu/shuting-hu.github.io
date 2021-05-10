@@ -7,9 +7,9 @@
     
 .accordion li {
     padding: 2em 0;
-    border-bottom:1px solid #ccc;
-    position:relative;
-    cursor:pointer;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+    cursor: pointer;
 }
   
 .accordion h3 {
@@ -18,16 +18,37 @@
  
 .accordion span {
     float: right;
-    color:#ccc;
+    color: #ccc;
     font-size: 1.5em;
 }
   
-.accordion div {
-    margin:5px 0;
-    display:none;
+.hidden {
+    margin: 1em 0 0 0;
+    display: none;
 }
 
 .level {
     display: inline-block;
 }
-   
+
+.tags div {
+    background-color: #EA9680;
+    color: white;
+    border-radius: 1em;
+    padding: 0 1em;
+    width: fit-content;
+    margin: 1px 1px 0 0;
+    text-align: center;
+    display: inline-block;
+    font-size: 13px;
+    font-style: italic;
+    opacity: 70%;
+}
+
+.proj-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 3em;
+    grid-row-gap: 2em;
+    grid-auto-rows: minmax(100px, auto);
+}

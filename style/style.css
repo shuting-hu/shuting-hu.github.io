@@ -72,6 +72,12 @@ p {
     padding-right: 1em;
 }
 
+.title-socials > a:hover,
+.socials > a:hover {
+    opacity: 0.60;
+    transition: 0.25s ease-in-out;
+}
+
 .faded {
     opacity: 0.5;
 }
