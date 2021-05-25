@@ -6,4 +6,5 @@ df-messenger {
     --df-messenger-send-icon: #ffb88c;
     --df-messenger-user-message: #ffd2b6;
     --df-messenger-input-placeholder-font-color: #cbcbcb;
+    --df-messenger-chip-border-color:#ffd2b6;
 }
