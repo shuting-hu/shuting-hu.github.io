@@ -6,7 +6,7 @@
     <meta name="description" content="TODO"> -->
     <meta name="author" content="Shu Ting Hu">
     <meta name="viewport" content="width-device-width, initial-scale=1">
-    <link rel="icon" type="image/svg" href="assets/external/lantern.svg"/>
+    <link rel="icon" type="image/svg" href="assets/external/lantern.svg" />
     <title>shuting hu | girl meets (tech) world</title>
 
     <link rel="stylesheet" href="https://use.typekit.net/sew5mui.css">
@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="style/rotating.css">
     <link rel="stylesheet" href="style/accordion.css">
     <link rel="stylesheet" href="style/chat.css">
+    <link rel="stylesheet" href="style/carousel.css">
 </head>
 
 <body>
@@ -68,7 +69,7 @@
     <!-- ABOUT -->
     <div class="wrapper" id="about">
         <div id="photo">
-            <img src="assets/personal/me.jpg" alt="Oh hi, it's me!">
+            <img src="assets/placeholder.jpeg" alt="Oh hi, it's me!">
         </div>
 
         <div id="bio">
@@ -262,11 +263,45 @@
     <!-- FILMS -->
     <div class="wrapper" id="films">
         <div id="playlist">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/ctQC4rLhk5s"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen>
-            </iframe>
+            <div class="carousel">
+                <button class="carousel-btn carousel-btn--left is-hidden">
+                    <img src="assets/action/left.svg" alt="">
+                </button>
+                <div class="carousel-container">
+                    <ul class="carousel-track">
+                        <li class="carousel-slide current-slide">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/ctQC4rLhk5s"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen>
+                            </iframe>
+                        </li>
+                        <li class="carousel-slide">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/WOHYUyyCAdY"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen>
+                            </iframe>
+                        </li>
+                        <li class="carousel-slide">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/ctQC4rLhk5s"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen>
+                            </iframe>
+                        </li>
+                    </ul>
+                </div>
+                <button class="carousel-btn carousel-btn--right">
+                    <img src="assets/action/right.svg" alt="">
+                </button>
+                <div class="carousel-nav">
+                    <button class="carousel-indicator current-slide"></button>
+                    <button class="carousel-indicator"></button>
+                    <button class="carousel-indicator"></button>
+                </div>
+            </div>
+
         </div>
 
         <div id="films">
@@ -323,6 +358,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="/js/anchor-scroll.js"></script>
     <script src="/js/accordion-view.js"></script>
+    <script src="/js/carousel.js"></script>
     <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
     <df-messenger intent="WELCOME" chat-title="💬" agent-id="6f3915d3-b9c5-4863-970b-d8b7ae05332d" language-code="en"
         chat-icon="assets/external/lantern.svg">
