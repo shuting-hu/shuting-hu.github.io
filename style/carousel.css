@@ -6,7 +6,6 @@
 }
 
 .carousel-container {
-    background: lightgreen;
     height: 100%;
     position: relative;
     overflow: hidden;
@@ -38,31 +37,31 @@
 }
 
 .carousel-btn--left {
-    left: -40px;
+    left: -2.5em;
 }
 
 .carousel-btn--right {
-    right: -40px;
+    right: -2.5em;
 }
 
 .carousel-nav {
     display: flex;
     justify-content: center;
-    padding: 10px 0;
+    padding: 1em 0;
 }
 
 .carousel-indicator {
     border: 0;
     border-radius: 50%;
-    width: 15px;
-    height: 15px;
-    background:rgba(0, 0, 0, .3);
-    margin: 0 10px;
+    width: 12px;
+    height: 12px;
+    background:rgba(0, 0, 0, .25);
+    margin: 0 .5em;
     cursor: pointer;
 }
 
 .carousel-indicator.current-slide {
-    background: rgba(0, 0, 0, .75);
+    background: rgba(0, 0, 0, .65);
 }
 
 .is-hidden {
