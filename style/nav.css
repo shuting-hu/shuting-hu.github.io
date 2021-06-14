@@ -36,6 +36,21 @@
 
 @media only screen and (max-width: 800px) {
     .nav {
-        display: none;
+        /* display: none; */
+    }
+
+    .nav > div {
+        font-size: 1em;
+        padding: 0 1em;
+    }
+
+    .nav > .nav-links, .nav > .nav-title {
+        float: none;
+        display: flex;
+        justify-content: center;
+    }
+
+    .nav > div > a {
+        margin: 0 0.75em;
     }
 }
