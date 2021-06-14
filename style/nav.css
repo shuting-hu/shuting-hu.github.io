@@ -34,6 +34,8 @@
     background-size: 100% 88%;
 }
 
-/* @media (max-width: 40em) {
-
-} */
+@media only screen and (max-width: 800px) {
+    .nav {
+        display: none;
+    }
+}

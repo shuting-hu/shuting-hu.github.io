@@ -67,3 +67,14 @@
     max-width: calc(1/3 * 75vw - 1em);
     height: auto;
 }
+
+@media only screen and (max-width: 800px) {
+
+    .proj-grid, .proj-grid-triple {
+        grid-template-columns: 1fr;
+    }
+
+    .proj-grid img, .proj-grid-triple img {
+        max-width: 75vw;
+    }
+}

@@ -1,5 +1,20 @@
+.video-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.video-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
 .carousel {
     position: relative;
+    /* yoinks */
     height: 315px;
     width: 560px;
     margin: 0 auto;
@@ -66,4 +81,12 @@
 
 .is-hidden {
     display: none;
+}
+
+@media only screen and (max-width: 800px) {
+    .carousel {
+        /* yoinks */
+        height: calc(315px/2);
+        width: calc(560px/2);
+    }
 }
